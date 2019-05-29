@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.SVGPath?>
+
+<VBox fx:id="vBox" alignment="CENTER_LEFT" prefHeight="600.0" prefWidth="800.0" stylesheets="/css/style.css"
+      xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="main.com.controllers.MainController">
+    <MenuBar>
+        <Menu mnemonicParsing="false" text="Файл">
+            <MenuItem mnemonicParsing="false" onAction="#settings" text="Настройки"/>
+        </Menu>
+    </MenuBar>
+    <AnchorPane VBox.vgrow="ALWAYS">
+        <ImageView fx:id="imageViewFirst" fitHeight="581.0" fitWidth="800.0" pickOnBounds="true"
+                   AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                   AnchorPane.topAnchor="0.0"/>
+        <AnchorPane fx:id="buttonsControl" layoutX="650.0" layoutY="431.0" prefHeight="100.0" prefWidth="100.0"
+                    AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="50.0">
+            <SVGPath content="M0,50a50,50 0 1,0 100,0a50,50 0 1,0 -100,0">
+                <fill>
+                    <LinearGradient cycleMethod="REFLECT">
+                        <stops>
+                            <Stop color="#101010"/>
+                            <Stop color="#f0f0f0" offset="1.0"/>
+                        </stops>
+                    </LinearGradient>
+                </fill>
+            </SVGPath>
+            <SVGPath content="M3,50a47,47 0 1,0 94,0a47,47 0 1,0 -94,0" stroke="BLACK" strokeWidth="1.5">
+                <fill>
+                    <LinearGradient cycleMethod="REFLECT">
+                        <stops>
+                            <Stop color="#f0f0f0"/>
+                            <Stop color="#101010" offset="1.0"/>
+                        </stops>
+                    </LinearGradient>
+                </fill>
+            </SVGPath>
+            <SVGPath content="M6,50a44,44 0 1,0 88,0a44,44 0 1,0 -88,0">
+                <fill>
+                    <LinearGradient cycleMethod="REFLECT">
+                        <stops>
+                            <Stop color="#a8a8a8"/>
+                            <Stop color="#f0f0f0" offset="1.0"/>
+                        </stops>
+                    </LinearGradient>
+                </fill>
+            </SVGPath>
+            <SVGPath content="M30,50a20,20 0 1,0 40,0a20,20 0 1,0 -40,0" fill="#cccccc" onMouseClicked="#demoMode"
+                     stroke="BLACK" styleClass="controlButton"/>
+            <SVGPath content="M50,14 54,22 46,22Z" onMousePressed="#forwardPlatform" onMouseReleased="#stopPlatform"
+                     styleClass="controlButton"/>
+            <SVGPath content="M50,86 54,78 46,78Z" onMousePressed="#backPlatform" onMouseReleased="#stopPlatform"
+                     styleClass="controlButton"/>
+            <SVGPath content="M14,50 22,54 22,46Z" onMousePressed="#rightPlatform" onMouseReleased="#stopPlatform"
+                     styleClass="controlButton"/>
+            <SVGPath content="M86,50 78,54 78,46Z" onMousePressed="#leftPlatform" onMouseReleased="#stopPlatform"
+                     styleClass="controlButton"/>
+        </AnchorPane>
+        <Button fx:id="lightButton" layoutX="730.0" layoutY="410.0" onAction="#light" styleClass="imageButton"
+                AnchorPane.bottomAnchor="146.0" AnchorPane.rightAnchor="18.0"/>
+        <Button fx:id="recordCamera" layoutX="770.0" layoutY="14.0" mnemonicParsing="false" onAction="#recordCamera"
+                styleClass="imageButton" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0"/>
+        <ImageView fx:id="imageViewSecond" fitHeight="200.0" fitWidth="300.0" layoutX="14.0" layoutY="367.0"
+                   pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="14.0"
+                   AnchorPane.leftAnchor="14.0"/>
+        <JFXButton fx:id="buttonCameraFirst" layoutX="10.0" layoutY="45.0" onAction="#startCameraFirst"
+                   prefHeight="25.0" prefWidth="100.0" styleClass="buttonConnection" text="Камера 1"/>
+        <JFXButton fx:id="buttonCameraSecond" layoutX="10.0" layoutY="80.0" onAction="#startCameraSecond"
+                   prefHeight="25.0" prefWidth="100.0" styleClass="buttonConnection" text="Камера 2"/>
+        <JFXButton fx:id="buttonTurnConnection" onAction="#turnConnection" layoutX="10.0" layoutY="10.0"
+                   prefHeight="25.0" prefWidth="100.0" styleClass="buttonConnection" text="Соединение"/>
+    </AnchorPane>
+</VBox>

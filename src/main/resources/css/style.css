@@ -1,0 +1,137 @@
+.buttonSetting {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #1e88e5;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 14px;
+    -fx-pref-height: 25px;
+    -fx-pref-width: 100px;
+}
+
+.buttonSetting:hover {
+    -fx-opacity: 0.7;
+    -fx-cursor: hand;
+}
+
+.buttonConnection {
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-border-color: #d50000;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #1e88e5;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+
+.buttonConnection:hover {
+    -fx-opacity: 0.7;
+    -fx-cursor: hand;
+}
+
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: #1e88e5;
+}
+
+.jfx-tab-pane .tab-selected-line {
+    -fx-border-color: #4b9fea;
+}
+
+.jfx-tab-pane .tab {
+    -fx-font-size: 8px;
+}
+
+.jfx-tab-pane .tab:selected {
+    -fx-background-color: #155fa0;
+}
+
+.jfx-tab-pane .tab-header-area .jfx-rippler {
+    -jfx-rippler-fill: #4b9fea;
+}
+
+.jfx-text-field {
+    -jfx-label-float: true;
+    -jfx-focus-color: #1e88e5;
+    -jfx-unfocus-color: #4b9fea;
+    -fx-font-size: 14px;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 30px;
+    -fx-highlight-fill: #1e88e5;
+}
+
+.jfx-password-field {
+    -jfx-label-float: true;
+    -jfx-focus-color: #1e88e5;
+    -jfx-unfocus-color: #4b9fea;
+    -fx-font-size: 14px;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 30px;
+    -fx-highlight-fill: #1e88e5;
+}
+
+
+.jfx-combo-box {
+    -jfx-label-float: true;
+    -jfx-focus-color: #1e88e5;
+    -jfx-unfocus-color: #4b9fea;
+    -fx-font-size: 14px;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 30px;
+    -fx-highlight-fill: #1e88e5;
+}
+
+.paneSettings {
+    -fx-background-color: #ffffff;
+}
+
+.titled-pane {
+    -fx-animated: true;
+    -fx-text-fill: #ffffff;
+}
+
+.titled-pane .title {
+    -fx-border-radius: 10px;
+    -fx-background-color: #1e88e5;
+}
+
+.titled-pane:focused .title {
+    -fx-background-color: #155fa0;
+}
+
+.menu-bar > .container > .menu-button:showing {
+    -fx-background-color: #1e88e5;
+}
+
+.menu-bar > .container > .menu-button:hover {
+    -fx-background-color: #1e88e5;
+}
+
+.menu-item:focused {
+    -fx-background-color: #1e88e5;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: #ffffff;
+}
+
+.controlButton:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.5;
+}
+
+.imageButton {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.imageButton:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.8;
+}
+
+.check-box .text {
+    -fx-font-size: 14px;
+}
+
+.jfx-check-box {
+    -jfx-checked-color: #1e88e5;
+}
